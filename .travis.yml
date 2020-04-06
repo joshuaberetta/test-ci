@@ -7,6 +7,10 @@ python:
 matrix:
   allow_failures:
     - python: "nightly"
+branches:
+  only:
+    - master
+    - dev
 install:
   - pip install -r requirements.txt
 # command to run tests
